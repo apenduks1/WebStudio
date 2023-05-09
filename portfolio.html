@@ -5,74 +5,92 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/portfolio.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
 </head>
 <body>
     <header>
-        <ul>
-            <li><h2><span>Web</span>Studio</h2></li>
-            <li><a href="#">Студія</a></li>
-            <li><a href="#">Портфоліо</a></li>
-            <li><a href="#">Контакти</a></li>
-            <li><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-            <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
-        </ul>
-    </header>
+        <div class="container">
+          <div class="header_bloks">
+            <div class="header_block">
+              <a href="/"
+                ><h2 class="logo"><span>Web</span>Studio</h2></a
+              >
+              <nav>
+                <ul class="menu_link">
+                  <li class="nav"><a href="/">Студія</a></li>
+                  <li class="nav"><a href="./portfolio.html">Портфоліо</a></li>
+                  <li class="nav"><a href="/">Контакти</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="menu_contact">
+              <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </div>
+          </div>
+        </div>
+      </header>
+    <hr>
     <main>
-        <section> 
-             <button>Усі</button>
-            <button> Веб-сайти</button>
-            <button> Додатки</button>
-            <button>Дизайн</button>
-            <button>  Маркетинг</button>
+        <section class="buttons"> 
+             <button  class="btn">Усі</button>
+            <button class="btn"> Веб-сайти</button>
+            <button class="btn"> Додатки</button>
+            <button class="btn">Дизайн</button>
+            <button class="btn">  Маркетинг</button>
         </section>
         <section>
-            <ul>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Технокряк</a>
-                    <h4> Веб-сайт</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Постер New Orlean vs Golden Star</a>
-                    <h4>Дизайн</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Ресторан Seafood</a>
-                    <h4>Додаток</h4
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Проєкт Prime</a>
-                    <h4>Маркетинг</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Проєкт Boxes</a>
-                    <h4> Додаток</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Inspiration has no Borders</a>
-                    <h4>Веб-сайт</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Видання Limited Edition</a>
-                    <h4> Дизайн</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Проєкт LAB</a>
-                    <h4>Маркетинг</h4>
-                </li>
-                <li>
-                    <img src="#" alt="404">
-                    <a href="#">Growing Business</a>
-                    <h4> Додаток</h4>
-                </li>
-            </ul>
+            <div class="container">
+            <ul class="cards_list">
+                
+                    <li class="card">
+                        <img src="./img/page2/img1 (1).png" alt="404">
+                        <a href="#">Технокряк</a>
+                        <h4> Веб-сайт</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img2 (1).png" alt="404">
+                        <a href="#">Постер New Orlean vs Golden Star</a>
+                        <h4>Дизайн</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img3 (1).png" alt="404">
+                        <a href="#">Ресторан Seafood</a>
+                        <h4>Додаток</h4
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img4.png" alt="404">
+                        <a href="#">Проєкт Prime</a>
+                        <h4>Маркетинг</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img5.png" alt="404">
+                        <a href="#">Проєкт Boxes</a>
+                        <h4> Додаток</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img6.png" alt="404">
+                        <a href="#">Inspiration has no Borders</a>
+                        <h4>Веб-сайт</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img7.png" alt="404">
+                        <a href="#">Видання Limited Edition</a>
+                        <h4> Дизайн</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img8.png" alt="404">
+                        <a href="#">Проєкт LAB</a>
+                        <h4>Маркетинг</h4>
+                    </li>
+                    <li class="card">
+                        <img src="./img/page2/img9.png" alt="404">
+                        <a href="#">Growing Business</a>
+                        <h4> Додаток</h4>
+                    </li>
+                </ul>
+                </div>
         </section>
     </main>
     <footer>

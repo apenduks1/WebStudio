@@ -40,7 +40,6 @@ span {
 }
 header {
   height: 80px;
-  padding: 24px 0px 25px 0px;
 }
 .promo {
   padding: 200px 0px;
@@ -86,9 +85,9 @@ h1 {
 }
 .feature_items {
   display: flex;
-  gap: 22px;
+  justify-content: space-between;
   align-items: flex-start;
-  
+  box-sizing: border-box;
 }
 .feature_item {
   width: 270px;
@@ -106,113 +105,108 @@ h1 {
   color: #212121;
 }
 .feature_item > p {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 14px;
-line-height: 24px;
-/* or 171% */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
 
-letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 
-color: #757575;
-
+  
 }
 .feature {
-    padding: 34px 0 34px;
+  padding: 34px 0 34px;
 }
 .h2 {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #212121;
+  color: #212121;
 
-padding: 94px 0px 50px;
-align-items: center;
+  padding: 94px 0px 50px;
+  align-items: center;
 }
 .foto {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-    padding: 50px 0px 94px;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 50px 0px 94px;
 }
 footer {
-    background-color: #2f303a;
-
+  background-color: #2f303a;
 }
 .adress1 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: #FFFFFF;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: #ffffff;
 }
 .adress2 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: rgba(255, 255, 255, 0.6);
-    
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 .adress3 {
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    /* or 171% */
-    
-    letter-spacing: 0.03em;
-    
-    color: rgba(255, 255, 255, 0.6);
-    
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  /* or 171% */
+
+  letter-spacing: 0.03em;
+
+  color: rgba(255, 255, 255, 0.6);
 }
 li {
-    text-decoration: none;
-    list-style: none;
+  text-decoration: none;
+  list-style: none;
 }
 .team_card {
   width: 270px;
   height: 368px;
+  
 }
 .team_card img {
   width: 270px;
   height: 260px;
-  background: #FFFFFF;
-/* material shadow v1 */
 
-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 0px 0px 4px 4px;
+  /* material shadow v1 */
 
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .has {
-  font-family: 'Roboto';
-font-style: normal;
-font-weight: 700;
-font-size: 36px;
-line-height: 42px;
-text-align: center;
-letter-spacing: 0.03em;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 
-color: #212121;
-
+  color: #212121;
 }
 
 .team {
@@ -227,4 +221,39 @@ color: #212121;
 }
 button {
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+.nav > a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav > a:hover {
+  color: #2196f3;
+}
+.team_card:hover {
+  translate: 20px -20px;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+ 
+}
+.page:hover {
+  translate: 20px -20px;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  
+}
+.feature_team {
+  background: #F5F4FA;
+}
+.team_card {
+  background-color: #ffffff;
+  border-radius: 10px;
 }

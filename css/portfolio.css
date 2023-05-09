@@ -1,0 +1,132 @@
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+footer {
+  background-color: #2f303a;
+}
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.header_bloks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #000101;
+}
+span {
+  color: #2196f3;
+}
+.header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 510px;
+}
+.menu_link {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+}
+.menu_contact {
+  width: 306px;
+  display: flex;
+  justify-content: space-between;
+}
+header {
+  height: 80px;
+}
+.nav > a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav > a:hover {
+  color: #00060a;
+}
+.btn {
+  background: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  /* identical to box height, or 162% */
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  padding: 6px 22px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.btn:hover {
+  background: #2196f3;
+  /* shadow-middle */
+
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.buttons {
+  padding: 95px 0px 35px 0px;
+  margin: 0 auto;
+  width: 575px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cards_list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  width: 360px;
+  height: 404px;
+  margin-top: 30px;
+}
+.card h4, a {
+  margin: 0;
+}
+.card a {
+  margin-top: 20px;
+}
+.card h4 {
+  margin-top: 4px;
+    margin-left: 24px;
+}
+.card img {
+    width: 100%;
+}
+.card:hover {
+  translate: 20px -20px;
+  transition-duration: 0.5s;
+  transition-delay: 0.5s;
+  scale: 100;
+}
+.card > a {
+  color: #000101;
+}
