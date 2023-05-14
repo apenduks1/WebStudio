@@ -5,8 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./css/portfolio.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="./css/portfolio.css">
+    
 </head>
 <body>
     <header>
@@ -33,14 +38,14 @@
       </header>
     <hr>
     <main>
-        <section class="buttons"> 
+        <section class="buttons animate__animated animate__fadeInBottomLeft wow"> 
              <button  class="btn">Усі</button>
             <button class="btn"> Веб-сайти</button>
             <button class="btn"> Додатки</button>
             <button class="btn">Дизайн</button>
             <button class="btn">  Маркетинг</button>
         </section>
-        <section>
+        <section class="animate__animated animate__fadeInBottomLeft wow">
             <div class="container">
             <ul class="cards_list">
                 
@@ -93,7 +98,7 @@
                 </div>
         </section>
     </main>
-    <footer>
+    <footer class=" animate__animated animate__fadeInBottomLeft wow">
         <h2><span>Web</span>Studio</h2>
         <ul>
             <a href=""><li> м. Кив, пр-т Лесі Українки, 26</li></a>
@@ -101,5 +106,11 @@
             <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
     </footer>
+
+
+
+    <script src="./JS/wow.min.js"></script>
+    <script src="./JS/script.js"></script>
+
 </body>
 </html>
