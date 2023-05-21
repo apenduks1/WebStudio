@@ -1,4 +1,3 @@
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -30,21 +29,33 @@ span {
   width: 510px;
 }
 .menu_link {
-  width: 280px;
+  gap: 30px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 .menu_contact {
-  width: 306px;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  margin: 40px;
 }
 header {
   height: 80px;
 }
+.svg_foto {
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  width: 270px;
+  height: 120px;
+  left: 515px;
+  top: 774px;
+}
 .promo {
   padding: 200px 0px;
-  background-color: #2f303a;
+  background-image: url(../img/page1/Imgfon\ h1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .promo_title {
   color: aliceblue;
@@ -114,8 +125,6 @@ h1 {
   /* or 171% */
 
   letter-spacing: 0.03em;
-
-  
 }
 .feature {
   padding: 34px 0 34px;
@@ -186,7 +195,6 @@ li {
 .team_card {
   width: 270px;
   height: 368px;
-  
 }
 .team_card img {
   width: 270px;
@@ -243,18 +251,36 @@ a {
   translate: 20px -20px;
   transition-duration: 0.5s;
   transition-delay: 0.5s;
- 
 }
 .page:hover {
   translate: 20px -20px;
   transition-duration: 0.5s;
   transition-delay: 0.5s;
-  
 }
 .feature_team {
-  background: #F5F4FA;
+  background: #f5f4fa;
 }
 .team_card {
   background-color: #ffffff;
   border-radius: 10px;
+}
+.btn_big {
+  width: 41px;
+  height: 46.7px;
+  left: 32px;
+  top: 7px;
+  display: flex;
+  justify-content: space-between;
+
+  background: #afb1b8;
+}
+.menu_contact a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #757575;
 }
