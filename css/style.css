@@ -40,9 +40,13 @@ span {
   margin: 40px;
 }
 header {
+  position: fixed;
   height: 80px;
+  background-color: #FFFFFF;
+  width: 100%;
 }
 .svg_foto {
+  
   background-color: #f5f4fa;
   border-radius: 4px;
   width: 270px;
@@ -51,7 +55,8 @@ header {
   top: 774px;
 }
 .promo {
-  padding: 200px 0px;
+  
+  padding: 200px 0px; 
   background-image: url(../img/page1/Imgfon\ h1.png);
   background-position: center;
   background-size: cover;
