@@ -1,0 +1,103 @@
+.header_bloks {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  /* identical to box height */
+
+  letter-spacing: 0.03em;
+
+  color: #000101;
+}
+.header_block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 510px;
+}
+.menu_link {
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+.menu_contact {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+header {
+  position: fixed;
+
+  background-color: #ffffff;
+  width: 100%;
+}
+.nav {
+  text-decoration: none;
+}
+.nav > a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.nav > a:hover {
+  color: #2196f3;
+}
+.menu_contact a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  display: flex;
+  color: #757575;
+  align-items: center;
+}
+.menu_contact a:hover,
+.menu_contact a:hover path {
+  color: #2196f3;
+  fill: #2196f3;
+}
+.menu_contact svg {
+  margin-right: 6px;
+}
+.menu_link a::after {
+  color: #2196f3;
+  transition-duration: 1s;
+  transform: rotateY(90deg);
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #2196f3;
+  border-radius: 2px;
+  position: absolute;
+  top: 41px;
+}
+.menu_link a:hover::after {
+  content: "";
+  background-color: #2196f3;
+  border-radius: 2px;
+  transform: rotate(0deg);
+}
+.menu_link a {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+
+  color: #212121;
+  position: relative;
+}

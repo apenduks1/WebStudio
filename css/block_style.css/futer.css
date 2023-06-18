@@ -1,0 +1,42 @@
+.futer_nav_website h4 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.futer_nav_website a {
+  display: block;
+  background: rgba(255, 255, 255, 0.1);
+  height: 44px;
+  width: 44px;
+  border-radius: 100%;
+  position: relative;
+}
+
+.futer_nav_website svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.futer_nav_website a:hover,
+.futer_nav_website a:hover path {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.footer_container {
+  display: flex;
+  gap: 70px;
+}
+.futer_nav_website ul {
+  display: flex;
+  gap: 10px;
+  padding: 0;
+}

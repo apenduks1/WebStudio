@@ -1,0 +1,30 @@
+.clients path {
+  border-radius: 0;
+  border: inset;
+  fill: #afb1b8;
+}
+.clients path:hover,
+.clients svg:hover {
+  fill: #2196f3;
+}
+.clients li {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  margin: 15px;
+  padding: 1px 13px;
+}
+.clients h3 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+}
+.clients ul {
+  display: flex;
+  justify-content: center;
+}
