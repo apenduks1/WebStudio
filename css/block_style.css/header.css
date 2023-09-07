@@ -21,11 +21,13 @@
   align-items: center;
   width: 510px;
 }
+
 .menu_link {
   gap: 30px;
   display: flex;
   align-items: center;
 }
+
 .menu_contact {
   display: flex;
   align-items: center;
@@ -35,6 +37,7 @@ header {
   position: fixed;
   background-color: #ffffff;
   width: 100%;
+  z-index: 20000;
 }
 .nav {
   text-decoration: none;
@@ -68,7 +71,7 @@ header {
   fill: #2196f3;
 }
 .menu_contact svg {
-  margin-right: 6px;
+  margin-right: 10px;
 }
 .menu_link a::after {
   color: #2196f3;
@@ -100,3 +103,4 @@ header {
   color: #212121;
   position: relative;
 }
+

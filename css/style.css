@@ -5,6 +5,18 @@
 @import "./block_style.css/page.css";
 @import "./block_style.css/promo.css";
 @import "./block_style.css/team.css";
+@import "./block_style.css/modal.css";
+
+
+
+
+
+
+
+
+
+
+
 .container {
   max-width: 1140px;
   margin: 0 auto;

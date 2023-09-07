@@ -3,10 +3,10 @@
   border: inset;
   fill: #afb1b8;
 }
-.clients path:hover,
-.clients svg:hover {
-  fill: #2196f3;
+.clients li:hover {
+  border: 1px solid #2196f3;
 }
+
 .clients li {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -27,4 +27,7 @@
 .clients ul {
   display: flex;
   justify-content: center;
+}
+.clients_a path:hover {
+color : #2196f3;
 }
