@@ -6,7 +6,7 @@
   line-height: 16px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
- margin: 0;
+  margin: 0;
   color: #ffffff;
 }
 
@@ -23,22 +23,22 @@ footer {
   padding: 72px 0 60px 0;
 }
 .adress1 {
-  color: #FFF;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
 .adress2 {
-  color: rgba(255, 255, 255, 0.60);
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 171.429% */
-letter-spacing: 0.42px;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 171.429% */
+  letter-spacing: 0.42px;
 }
 .adress3 {
   font-family: "Roboto";
@@ -50,17 +50,18 @@ letter-spacing: 0.42px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.futer_nav_website svg {
+.futer_nav_website i {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  color: #fff;
 }
 
 .futer_nav_website a:hover,
-.futer_nav_website a:hover path {
+.futer_nav_website a:hover i {
   background-color: #2196f3;
-  fill: #ffffff;
+  color: #ffffff;
 }
 
 .futer_nav_website ul {
@@ -122,10 +123,9 @@ letter-spacing: 0.42px;
   border: none;
 }
 footer .container {
-display: flex;
-justify-content: space-between;
-align-items: flex-start;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 .footer_box {
   display: flex;
