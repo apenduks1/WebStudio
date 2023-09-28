@@ -60,3 +60,20 @@
   hr {
     border: 1px solid #ECECEC;
   }
+  .nav .menu_active {
+    color: #2196f3;
+  
+  }
+  .nav .menu_active::after {
+    color: #2196f3;
+    transition-duration: 1s;
+    transform: rotateY(0);
+    content: "";
+    display: block;
+    width: 73px;
+    height: 4px;
+    background-color: #2196f3;
+    border-radius: 2px;
+    position: absolute;
+    top:80px;
+  }

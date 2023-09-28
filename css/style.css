@@ -17,38 +17,3 @@
 
 
 
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-}
-span {
-  color: #2196f3;
-}
-.h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-
-  padding: 94px 0px 50px;
-  align-items: center;
-}
-
-li {
-  text-decoration: none;
-  list-style: none;
-}
-.Studio {
-  margin: 0 auto;
-}
-button {
-  cursor: pointer;
-}
-a {
-  text-decoration: none;
-}

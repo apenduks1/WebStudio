@@ -1,0 +1,107 @@
+
+.header {
+	position: fixed;
+	background-color: $var1;
+	width: 100%;
+	z-index: 20000;
+	top: 0;
+	&_bloks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&_block {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		width: 510px;
+	}
+	&_menu_link {
+		gap: 30px;
+		display: flex;
+		align-items: center;
+		a::after {
+			color: $var3;
+			transition-duration: 1s;
+			transform: rotateY(90deg);
+			content: "";
+			display: block;
+			width: 100%;
+			height: 4px;
+			background-color: $var3;
+			border-radius: 2px;
+			position: absolute;
+			top: 41px;
+		}
+		a:hover::after {
+			content: "";
+			background-color: $var3;
+			border-radius: 2px;
+			transform: rotate(0deg);
+		}
+		a {
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+			color: $var2;
+			position: relative;
+		}
+	}
+	&_menu_contact {
+		display: flex;
+		align-items: center;
+		gap: 30px;
+		a {
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+			display: flex;
+			color: $var4;
+			align-items: center;
+			&:hover, &:hover path {
+				color: $var3;
+				fill: $var3;
+			}
+		}
+		svg {
+			margin-right: 10px;
+		}
+	}
+	&_nav {
+		text-decoration: none;
+		> a {
+			font-family: "Roboto";
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 16px;
+			letter-spacing: 0.02em;
+			color: $var2;
+			&:hover {
+				color: $var3;
+			}
+		}
+		.menu_active {
+			color: $var3;
+			&::after {
+				color: $var3;
+				transition-duration: 1s;
+				transform: rotateY(0);
+				content: "";
+				display: block;
+				width: 100%;
+				height: 4px;
+				background-color: $var3;
+				border-radius: 2px;
+				position: absolute;
+				top: 42px;
+			}
+		}
+	}
+}

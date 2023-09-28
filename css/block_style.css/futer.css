@@ -70,15 +70,6 @@ footer {
   padding: 0;
 }
 
-.Studio {
-  font-family: Raleway;
-  font-size: 26px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: 0.78px;
-  padding-left: 36px;
-}
 
 .footer_title_smoll {
   color: #fff;
@@ -105,6 +96,8 @@ footer {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   width: 358px;
   height: 50px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 .list button {
   border-radius: 4px;
