@@ -10,6 +10,18 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+	&_logo {
+		font-family: "Raleway";
+		font-style: normal;
+		font-weight: 700;
+		font-size: 26px;
+		line-height: 31px;
+		letter-spacing: 0.03em;
+		color: $var5;
+		span {
+			color: $var3;
+		}
+	}
 	&_block {
 		display: flex;
 		justify-content: space-between;
@@ -17,8 +29,9 @@
 		width: 510px;
 	}
 	&_menu_link {
-		gap: 30px;
+		
 		display: flex;
+		gap: 30px;
 		align-items: center;
 		a::after {
 			color: $var3;

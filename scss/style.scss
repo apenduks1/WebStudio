@@ -1,7 +1,14 @@
-@import "./utils/variebls";
 @import "./utils/colors";
+@import "./utils/variebls";
 @import "./components_main/header";
 @import "./components_main/clients";
 @import "./components_main/feature";
 @import "./components_main/team";
-@import "./components_main/page"
+@import "./components_main/page";
+@import "./components_main/promo";
+@import "./components_main/modal";
+@import "./components_main/footer";
+@import "./components_portfolio/btn";
+@import "./components_portfolio/card";
+@import "./components_portfolio/footer";
+@import "./components_portfolio/header";

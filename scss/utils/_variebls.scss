@@ -1,20 +1,9 @@
-.logo {
-	font-family: "Raleway";
-	font-style: normal;
-	font-weight: 700;
-	font-size: 26px;
-	line-height: 31px;
-	letter-spacing: 0.03em;
-	color: $vsr5;
-}
 
 .container {
 	max-width: 1140px;
 	margin: 0 auto;
 }
-span {
-	color: $var1;
-}
+
 .h2 {
 	font-family: "Roboto";
 	font-style: normal;
@@ -39,4 +28,15 @@ button {
 }
 a {
 	text-decoration: none;
+}
+h1 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 900;
+	font-size: 44px;
+	line-height: 60px;
+	text-align: center;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	
 }
