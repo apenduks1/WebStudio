@@ -26,19 +26,19 @@
   <body>   
       <header class="header">
         <div class="container">
-          <div class="header_bloks animate__animated animate__fadeInUp wow">
-            <div class="header_block">
+          <div class="header__bloks animate__animated animate__fadeInUp wow">
+            <div class="header__block">
               <a href="/"
-                ><h2 class="header_logo"><span >Web</span>Studio</h2></a>
+                ><h2 class="header__logo"><span >Web</span>Studio</h2></a>
               <nav>
-                <ul class="header_menu_link">
-                  <li class="header_nav"><a class="menu_active" href="/">Студія</a></li>
-                  <li class="header_nav"><a  href="./portfolio.html">Портфоліо</a></li>
-                  <li class="header_nav"><a href="/">Контакти</a></li>
+                <ul class="header__menu">
+                  <li class="header__nav"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>
+                  <li class="header__nav"><a class="header__link" href="/">Контакти</a></li>
+                  <li class="header__nav"><a class="menu__active header__link" href="/">Студія</a></li>
                 </ul>
               </nav>
             </div>
-            <div class="header_menu_contact">
+            <div class="header__contact">
               <a href="mailto:info@devstudio.com">
                 <svg
                   width="16"
@@ -75,20 +75,20 @@
       </header>
       <main>
         <section class="promo">
-          <h1 class="promo_title">
+          <h1 class="promo__title">
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="promo_btr openModal" data-open-modal>Замовити послугу</button>
+          <button class="promo__btr openModal" data-open-modal>Замовити послугу</button>
           
         </section>
         <section
           class="feature animate__animated animate__fadeInUp wow"
           data-wow-duration="2s">
           <div class="container">
-            <ul class="feature_items">
-              <li class="feature_item">
-                <div class="futhere_img">
+            <ul class="feature__list">
+              <li class="feature__iteam">
+                <div class="futhere__img">
                   <img src="./img/icons/antenna 1.svg" alt="404" />
                 </div>
                 <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -98,8 +98,8 @@
                 </p>
               </li>
   
-              <li class="feature_item">
-                <div class="futhere_img">
+              <li class="feature__iteam">
+                <div class="futhere__img">
                   <img src="./img/icons/clock 1.svg" alt="404" />
                 </div>
                 <h3>ПунктуальнІсть</h3>
@@ -108,8 +108,8 @@
                   тягне у себе.
                 </p>
               </li>
-              <li class="feature_item">
-                <div class="futhere_img">
+              <li class="feature__iteam">
+                <div class="futhere__img">
                   <img src="./img/icons/diagram 1.svg" alt="404" />
                 </div>
                 <h3>ПЛАНУВАННЯ</h3>
@@ -117,8 +117,8 @@
                   Так само консультація з широким активом значною мірою зумовлює.
                 </p>
               </li>
-              <li class="feature_item">
-                <div class="futhere_img">
+              <li class="feature__iteam">
+                <div class="futhere__img">
                   <img src="./img/icons/astronaut 1.svg" alt="404" />
                 </div>
                 <h3>СУЧАСНІ ТЕхнології</h3>
@@ -131,41 +131,41 @@
           </div>
         </section>
         <section class="page">
-          <h2 class="page_h2">Чим ми займаємося</h2>
-          <div class="page_fotos">
+          <h2 class="page__title">Чим ми займаємося</h2>
+          <div class="page__fotos">
             <div class="container">
-              <ul class="page_foto">
-                <li class="page_items">
+              <ul class="page__list">
+                <li class="page__iteam">
                   <img
                     src="./img/page1/img1.png"
                     alt="404"
                     width="350px"
                     height="290px"
                   />
-                  <div class="page_foto_emet">
-                    <h4 class="page_foto_text">Десктопні додатки</h4>
+                  <div class="page__emet">
+                    <h4 class="page__text">Десктопні додатки</h4>
                   </div>
                 </li>
-                <li class="page_items">
+                <li class="page__iteam">
                   <img
                     src="./img/page1/img2.png"
                     alt="404"
                     width="350px"
                     height="290px"
                   />
-                  <div class="foto_emet">
-                    <h4 class="foto_text">Мобільні додатки</h4>
+                  <div class="foto__emet">
+                    <h4 class="foto__text">Мобільні додатки</h4>
                   </div>
                 </li>
-                <li class="page_items">
+                <li class="page__iteam">
                   <img
                     src="./img/page1/img3.png"
                     alt="404"
                     width="350px"
                     height="290px"
                   />
-                  <div class="page_foto_emet">
-                    <h4 class="page_foto_text">Дизайнерські рішення</h4>
+                  <div class="page__emet">
+                    <h4 class="page__text">Дизайнерські рішення</h4>
                   </div>
                 </li>
               </ul>
@@ -173,12 +173,12 @@
           </div>
         </section>
         <section
-          class="feature_team animate__animated animate__fadeInUp wow"
+          class="team animate__animated animate__fadeInUp wow"
           data-wow-duration="2s"
         >
-          <h2 class="team_has">Наша команда</h2>
-          <ul class="team">
-            <li class="team_card">
+          <h2 class="team__title">Наша команда</h2>
+          <ul class="team__list">
+            <li class="team__card">
               <img
                 src="./img/page1/img4.jpg"
                 alt="404"
@@ -187,7 +187,7 @@
               />
               <h3>Ігор Дем'яненко</h3>
               <h2>Product Designer</h2>
-              <ul class="team_ul">
+              <ul class="team__ul">
                 <li>
                   <a href="/">
                     <svg
@@ -335,12 +335,12 @@
                 </li>
               </ul>
             </li>
-            <li class="team_card">
+            <li class="team__card">
               <img src="./img/page1/img5.jpg" width="300px height="274px"
               alt="404" />
               <h3>Ольга Рєпіна</h3>
               <h2>Frontend Developer</h2>
-              <ul class="team_ul">
+              <ul class="team__ul">
                 <li>
                   <a href="/">
                     <svg
@@ -488,12 +488,12 @@
                 </li>
               </ul>
             </li>
-            <li class="team_card">
+            <li class="team__card">
               <img src="./img/page1/img6.jpg" alt="404" width="300px
               height="274px" />
               <h3>Микола Тарасов</h3>
               <h2>Marketing</h2>
-              <ul class="team_ul">
+              <ul class="team__ul">
                 <li>
                   <a href="/">
                     <svg
@@ -641,12 +641,12 @@
                 </li>
               </ul>
             </li>
-            <li class="team_card">
+            <li class="team__card">
               <img src="./img/page1/img7.jpg" alt="404" width="300px
               height="274px" />
               <h3>Михайло Єрмаков</h3>
               <h2>UI Designe</h2>
-              <ul class="team_ul">
+              <ul class="team__ul">
                 <li>
                   <a href="/">
                     <svg
@@ -800,9 +800,9 @@
           <h3>Постійні клієнти</h3>
   
           <div class="container">
-            <ul>
+            <ul class="team__list">
               <li>
-                <a href="/" class="clients_a">
+                <a href="/" class="clients__link">
                   <svg
                     width="106"
                     height="60"
@@ -820,7 +820,7 @@
                 </a>
               </li>
               <li>
-                <a href="/" class="clients_a"> 
+                <a href="/" class="clients__link"> 
                   <svg
                     width="106"
                     height="60"
@@ -910,7 +910,7 @@
                 </a>
               </li>
               <li>
-                <a href="/" class="clients_a">
+                <a href="/" class="clients__link">
                   <svg
                     width="106"
                     height="60"
@@ -974,7 +974,7 @@
                 </a>
               </li>
               <li>
-                <a href="/" class="clients_a">
+                <a href="/" class="clients__link">
                    <svg
                     width="106"
                     height="60"
@@ -1001,7 +1001,7 @@
                 ></a>
               </li>
               <li>
-                <a href="/" class="clients_a">
+                <a href="/" class="clients__link">
                   <svg
                     width="106"
                     height="60"
@@ -1052,7 +1052,7 @@
                 ></a>
               </li>
               <li>
-                <a href="/" class="clients_a">
+                <a href="/" class="clients__link">
                   <svg
                     width="106"
                     height="60"
@@ -1230,7 +1230,7 @@
                 <form >
                   <label for="">Коментар</label>
                   <div class="form_box">
-                    <input class="modal_imput1" type="comment" placeholder="Введіть текст">
+                    <textarea class="modal_texteria" name="masege" id="" cols="30" rows="10" placeholder="Введіть текст" ></textarea>
                   </div> 
                 </form>
               </li>

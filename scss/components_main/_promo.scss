@@ -2,15 +2,15 @@
 
 .promo {
 	padding: 200px 0px;
-	background-image: "";
+	background-image: url(../img/page1/Imgbig.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	margin-top: 74px;
-	&_title {
+	&__title {
 		color: aliceblue;
 	}
-	&_btr {
+	&__btr {
 		width: 216px;
 		height: 50px;
 		border: none;

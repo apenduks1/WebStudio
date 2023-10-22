@@ -1,51 +1,63 @@
 .page {
-	margin: 0;
-	&_foto {
-		display: flex;
-		justify-content: space-around;
-		list-style: none;
-		padding: 50px 0px 94px;
-		&_emet {
-			position: absolute;
-			bottom: 4px;
-			background: rgba(47, 48, 58, 0.8);
-			width: 370px;
-			height: 70px;
-			padding: 27px 0;
-			box-sizing: border-box;
-		}
-		&_text {
-			color: $var7;
-			text-align: center;
-			text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-			font-size: 14px;
-			font-family: Roboto;
-			font-weight: 700;
-			letter-spacing: 0.42px;
-			text-transform: uppercase;
-		}
-	}
-	&_items:hover {
-		translate: 20px -20px;
-		transition-duration: 0.5s;
-		transition-delay: 0.5s;
-	}
-	&_items h5 {
-		font-family: "Roboto";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 14px;
-		line-height: 16px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		text-transform: uppercase;
-		color: $var1;
-	}
-	&_items {
-		position: relative;
-		img {
-			height: 294px;
-			width: 370px;
-		}
-	}
+  margin: 0;
+  &__foto {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 50px 0px 94px;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 215px 0;
+    gap: 30px;
+  }
+&__title{
+	color: &var2 ;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 36px;
+	font-style: normal;
+	font-weight: 700;
+	line-height: normal;
+	letter-spacing: 1.08px;
+}
+  &__emet {
+    position: absolute;
+    bottom: 4px;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    padding: 27px 0;
+    box-sizing: border-box;
+  }
+  &__text {
+    color: $var7;
+    text-align: center;
+    text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+  }
+
+  &__iteam h4 {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $var1;
+  }
+  &__iteam {
+    position: relative;
+    img {
+      height: 294px;
+      width: 370px;
+    }
+  }
 }

@@ -1,10 +1,11 @@
 .team {
-	display: flex;
-	justify-content: space-around;
-	&_card img {
+	padding: 94px 0;
+    background-color: $team_bg ;
+	width: 100%;
+	&__card img {
 		width: 270px;
 	}
-	&_has {
+	&__title {
 		font-family: "Roboto";
 		font-style: normal;
 		font-weight: 700;
@@ -14,7 +15,12 @@
 		letter-spacing: 0.03em;
 		color: $var2;
 	}
-	&_card {
+	&__list {
+		display: flex;
+		justify-content: space-between;
+		margin:0 215px ;
+	}
+	&__card {
 		background-color: $var1;
 		border-radius: 0px 0px 4px 4px;
 		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -44,7 +50,7 @@
 			letter-spacing: 0.48px;
 		}
 	}
-	&_ul {
+	&__ul {
 		display: flex;
 		justify-content: space-between;
 		padding: 20px;

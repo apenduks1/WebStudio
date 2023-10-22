@@ -1,13 +1,13 @@
 .feature {
 	padding: 34px 0 34px;
-	&_items {
+	&__list {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 		box-sizing: border-box;
 		padding: 0;
 	}
-	&_item {
+	&__iteam {
 		width: 270px;
 		list-style-type: none;
 		> h3 {
@@ -30,23 +30,18 @@
 			letter-spacing: 0.03em;
 		}
 	}
-    &_img {
+    &__img {
         width: 270px;
         height: 120px;
         border-radius: 4px;
         position: relative;
-        img {
+        > img {
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
         }
     }
-    &_team {
-        background: #f5f4fa;
-        padding: 94px 0px;
-      }
-    
 }
-/* or 171% */
+
 
