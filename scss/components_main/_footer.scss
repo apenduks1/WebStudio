@@ -1,7 +1,7 @@
 .footer {
 	background-color: $var8;
 	padding: 72px 0 60px 0;
-	&_nav_website h4 {
+	&__nav--end h4 {
 		font-family: "Roboto";
 		font-style: normal;
 		font-weight: 700;
@@ -12,7 +12,7 @@
 		margin: 0;
 		color: $var8;
 	}
-	&_nav_website a {
+	&__nav--end a {
 		display: block;
 		background: rgba(255, 255, 255, 0.1);
 		height: 44px;
@@ -22,7 +22,7 @@
 		/* 171.429% */
   letter-spacing: 0.42px;
 }
-.footer_adress2 {
+.footer__adress2 {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 14px;
@@ -31,7 +31,7 @@
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.footer_adress3 {
+.footer__adress3 {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 400;
@@ -41,7 +41,7 @@
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
 }
-.footer_nav_website i {
+.footer__nav--end i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -49,20 +49,20 @@
   color: $var1;
 }
 
-.footer_nav_website a:hover,
-.footer_nav_website a:hover i {
+.footer__nav--end a:hover,
+.footer__nav--end a:hover i {
   background-color: $var2;
   color: $var1;
 }
 
-.footer_nav_website ul {
+.footer__nav--end ul {
   display: flex;
   gap: 10px;
   padding: 0;
 }
 
 
-.footer_title_smoll {
+.footer__subtitle {
   color: $var1;
   font-family: Roboto;
   font-size: 14px;
@@ -73,7 +73,7 @@
   text-transform: uppercase;
 }
 
-.footer_list input {
+.footer__list input {
   color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-size: 16px;
@@ -90,7 +90,7 @@
   padding: 20px;
   box-sizing: border-box;
 }
-.footer_list button {
+.footer__list button {
   border-radius: 4px;
   background:3;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -108,7 +108,7 @@
 			color: $var1;
 		}
 	}
-	&_adress1 {
+	&__adress1 {
 		color: $var1;
 		font-family: Roboto;
 		font-size: 14px;
@@ -117,7 +117,7 @@
 		line-height: 24px;
 		letter-spacing: 0.42px;
 	}
-	&_adress2 {
+	&__adress2 {
 		color: rgba(255, 255, 255, 0.6);
 		font-family: Roboto;
 		font-size: 14px;
@@ -126,7 +126,7 @@
 		line-height: 24px;
 		letter-spacing: 0.42px;
 	}
-	&_adress3 {
+	&__adress3 {
 		font-family: "Roboto";
 		font-style: normal;
 		font-weight: 400;
@@ -135,19 +135,19 @@
 		letter-spacing: 0.03em;
 		color: rgba(255, 255, 255, 0.6);
 	}
-	&_nav_website i {
+	&__nav--end i {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
 		color: $var1;
 	}
-	&_nav_website ul {
+	&__nav--end ul {
 		display: flex;
 		gap: 10px;
 		padding: 0;
 	}
-	&_title_smoll {
+	&__subtitle {
 		color: $var1;
 		font-family: Roboto;
 		font-size: 14px;
@@ -157,7 +157,7 @@
 		letter-spacing: 0.42px;
 		text-transform: uppercase;
 	}
-	&_list input {
+	&__list input {
 		color: rgba(255, 255, 255, 0.6);
 		font-family: Roboto;
 		font-size: 16px;
@@ -174,28 +174,15 @@
 		padding: 20px;
 		box-sizing: border-box;
 	}
-	&_list button {
-		border-radius: 4px;
-		background: $var2;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-		width: 200px;
-		height: 50px;
-		color: $var1;
-		text-align: center;
-		font-family: Roboto;
-		font-size: 16px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: 30px;
-		letter-spacing: 0.96px;
-		border: none;
+	&__list button {
+		@extend %btn
 	}
 	.container {
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-start;
 	}
-	&_box {
+	&__box {
 		display: flex;
 		gap: 12px;
 		margin-top: 20px;

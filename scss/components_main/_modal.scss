@@ -13,7 +13,7 @@
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 
-	&_title {
+	&__title {
 		color: $var2;
 		text-align: center;
 		font-family: Roboto;
@@ -23,14 +23,14 @@
 		line-height: normal;
 		letter-spacing: 0.6px;
 	}
-	&_imput1 {
+	&__texteria {
 		width: 448px;
 		height: 120px;
 		border-radius: 4px;
 		border: 1px solid rgba(33, 33, 33, 0.2);
 	}
 	/* 171.429% */
-	&_btn {
+	&__btn {
 		position: absolute;
 		width: 200px;
 		height: 50px;
@@ -40,17 +40,27 @@
 		border: none;
 		left: 30%;
 	}
-	&_imput {
+	&__imput {
 		width: 448px;
 		height: 40px;
 		border-radius: 4px;
 		border: 1px solid rgba(33, 33, 33, 0.2);
 		margin-bottom: 10px;
 	}
-	&_svg {
+	&__svg {
 		position: absolute;
 		top: 25%;
 		left: 2%;
+	}
+	&__deskr {
+		color: $var4;
+		font-family: Roboto;
+		font-size: 14px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 24px;
+		letter-spacing: 0.42px;
+		text-align: center;
 	}
 }
 .backdrop {
@@ -71,31 +81,25 @@
 i:hover {
 	color: $var3;
 }
-.form_box:hover input {
-	border-color: $var3;
+.form {
+	&__box:hover input {
+		border-color: $var3;
+	}
+	&__box:hover i {
+		color: $var3;
+	}
+	&__box {
+		position: relative;
+	}
 }
+
 .is-hidden {
 	display: none;
-}
+}_
 .no-scroll {
 	overflow: hidden;
 }
-.form_box:hover i {
-	color: $var3;
-}
-.main_modal_deskr {
-	color: $var4;
-	font-family: Roboto;
-	font-size: 14px;
-	font-style: normal;
-	font-weight: 400;
-	line-height: 24px;
-	letter-spacing: 0.42px;
-	text-align: center;
-}
-.form_box {
-	position: relative;
-}
+
 .chekbox {
 	position: absolute;
 	top: 72%;

@@ -6,19 +6,12 @@
 		width: 270px;
 	}
 	&__title {
-		font-family: "Roboto";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 36px;
-		line-height: 42px;
-		text-align: center;
-		letter-spacing: 0.03em;
-		color: $var2;
+		@extend %title
 	}
 	&__list {
 		display: flex;
 		justify-content: space-between;
-		margin:0 215px ;
+		margin:0 100px ;
 	}
 	&__card {
 		background-color: $var1;

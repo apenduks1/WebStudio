@@ -1,12 +1,12 @@
 
-.btn {
+.btns {
 	padding: 95px 0px 35px 0px;
 	margin: 0 auto;
 	width: 575px;
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	&_list {
+	&__iteam {
 		background: $var1;
 		border: none;
 		border-radius: 4px;
@@ -32,7 +32,7 @@
     cursor: pointer;
     transition: 0.2s;
   }
-  .btn:hover {
+  .btns:hover {
     background: #2196f3;
     /* shadow-middle */
 	&:hover {

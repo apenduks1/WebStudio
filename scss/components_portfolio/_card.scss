@@ -56,31 +56,8 @@
 .card > a {
   color: #000101;
 }
-.card_hover {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 28px; /* 155.556% */
-	h4 {
-		margin-top: 4px;
-		margin-left: 24px;
-		font-family: "Roboto";
-		font-style: normal;
-		font-weight: 400;
-		font-size: 16px;
-		line-height: 30px;
-		letter-spacing: 0.03em;
-		color: $var4;
-	}
-	img {
-		width: 100%;
-	}
-	> a {
-		color: $var5;
-	}
-	&_hover {
+
+	.ca__hover {
 		color: $var1;
 		font-family: Roboto;
 		font-size: 18px;
@@ -93,11 +70,11 @@
 		left: 6%;
 		display: none;
 	}
-	&:hover .card_hover {
-		display: block;
+	&:hover .card__hover {
+		display: none
 	}
-}
-.cards_list {
+
+.cards__list {
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;

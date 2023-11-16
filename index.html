@@ -32,9 +32,10 @@
                 ><h2 class="header__logo"><span >Web</span>Studio</h2></a>
               <nav>
                 <ul class="header__menu">
+                  <li class="header__nav"><a class="menu__active header__link" href="/">Студія</a></li>
                   <li class="header__nav"><a class="header__link" href="./portfolio.html">Портфоліо</a></li>
                   <li class="header__nav"><a class="header__link" href="/">Контакти</a></li>
-                  <li class="header__nav"><a class="menu__active header__link" href="/">Студія</a></li>
+                
                 </ul>
               </nav>
             </div>
@@ -79,7 +80,7 @@
             Ефективні рішення для <br />
             вашого бізнесу
           </h1>
-          <button class="promo__btr openModal" data-open-modal>Замовити послугу</button>
+          <button class="promo__btn btn openModal" data-open-modal>Замовити послугу</button>
           
         </section>
         <section
@@ -88,7 +89,7 @@
           <div class="container">
             <ul class="feature__list">
               <li class="feature__iteam">
-                <div class="futhere__img">
+                <div class="feature__img">
                   <img src="./img/icons/antenna 1.svg" alt="404" />
                 </div>
                 <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
@@ -99,7 +100,7 @@
               </li>
   
               <li class="feature__iteam">
-                <div class="futhere__img">
+                <div class="feature__img">
                   <img src="./img/icons/clock 1.svg" alt="404" />
                 </div>
                 <h3>ПунктуальнІсть</h3>
@@ -109,7 +110,7 @@
                 </p>
               </li>
               <li class="feature__iteam">
-                <div class="futhere__img">
+                <div class="feature__img">
                   <img src="./img/icons/diagram 1.svg" alt="404" />
                 </div>
                 <h3>ПЛАНУВАННЯ</h3>
@@ -118,7 +119,7 @@
                 </p>
               </li>
               <li class="feature__iteam">
-                <div class="futhere__img">
+                <div class="feature__img">
                   <img src="./img/icons/astronaut 1.svg" alt="404" />
                 </div>
                 <h3>СУЧАСНІ ТЕхнології</h3>
@@ -131,7 +132,7 @@
           </div>
         </section>
         <section class="page">
-          <h2 class="page__title">Чим ми займаємося</h2>
+          <h2 class="title page__title">Чим ми займаємося</h2>
           <div class="page__fotos">
             <div class="container">
               <ul class="page__list">
@@ -176,7 +177,7 @@
           class="team animate__animated animate__fadeInUp wow"
           data-wow-duration="2s"
         >
-          <h2 class="team__title">Наша команда</h2>
+          <h2 class="title team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__card">
               <img
@@ -797,7 +798,7 @@
           </ul>
         </section>
         <section class="clients">
-          <h3>Постійні клієнти</h3>
+          <h3 class="title clients__title">Постійні клієнти</h3>
   
           <div class="container">
             <ul class="team__list">
@@ -1141,21 +1142,21 @@
       </main>
       <footer class=" footer animate__animated animate__fadeInBottomLeft wow">
         <div class=" container">
-          <div class="footer_nav_life">
+          <div class="footer_nav__start">
             <h2 class="Studio"><span class="footer_span">Web</span>Studio</h2>
-            <ul class="footer_adress">
+            <ul class="footer__adress">
               <a href="#0"
-                ><li class="footer_adress1">м. Кив, пр-т Лесі Українки, 26</li></a
+                ><li class="footer__adress1">м. Кив, пр-т Лесі Українки, 26</li></a
               >
-              <li class="footer_adress2">
+              <li class="footer__adress2">
                 <a href="mailto:info@devstudio.com">info@example.com</a>
               </li>
-              <li class="footer_adress3">
+              <li class="footer__adress3">
                 <a href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </div>
-          <div class="footer_nav_website">
+          <div class="footer__nav--end">
             <h4>Приєднуйтесь</h4>
             <ul>
               <li>
@@ -1173,12 +1174,12 @@
             </ul>
           </div>
         
-    <div class="footer_form">
-      <form class="footer_list">
-        <label class="footer_title_smoll">Підпишіться на розсилку</label>
-        <div class="footer_box">
+    <div class="footer__form">
+      <form class="footer__list">
+        <label class="footer__subtitle">Підпишіться на розсилку</label>
+        <div class="footer__box">
           <input type="email" name="email" placeholder="E-mail">
-        <button>Підписатися
+        <button class="btn">Підписатися
           <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M24 0L0 13.5L7.66994 16.3407L19.5 5.25002L10.5017 17.3896L10.509 17.3923L10.5 17.3896V24.0001L14.8013 18.982L20.2501 21.0001L24 0Z" fill="white"/>
           </svg>
@@ -1195,50 +1196,50 @@
       <div class="backdrop is-hidden " data-modal>
         <div class="modal" >
           <i  class="fa-solid fa-xmark close fa-2xl" data-close-modal></i>
-          <h5 class="modal_title">Залиште свої дані, ми вам передзвонимо</h5>
+          <h5 class="modal__title">Залиште свої дані, ми вам передзвонимо</h5>
           <ul>
-            <li class="modal_item">
+            <li class="modal__item">
               <label for="">Ім'я</label>
               <div class="form_box">
-                <input class="modal_imput" type="name" placeholder="">
-               <div class="modal_svg">
+                <input class="modal__imput" type="name" placeholder="">
+               <div class="modal__svg">
                 <i class="fa-solid fa-user "></i>
                </div>
               </div>
             </li>     
-             <li class="modal_item">           
+             <li class="modal__item">           
                 <form>
                   <label for="">Телефон</label>
-                  <div class="form_box">
-                    <input class="modal_imput" type="phone number" placeholder="">
-                    <div class="modal_svg">
+                  <div class="form__box">
+                    <input class="modal__imput" type="phone number" placeholder="">
+                    <div class="modal__svg">
                       <i class="fa-solid fa-phone"></i>
                     </div>
                   </div>           
             </li>
-              <li class="modal_item">
+              <li class="modal__item">
                 <form>
                   <label for="">Пошта</label>
-                  <div class="form_box">
-                    <input class="modal_imput" type="email" placeholder="">
-              <div class="modal_svg">
+                  <div class="form__box">
+                    <input class="modal__imput" type="email" placeholder="">
+              <div class="modal__svg">
                 <i class="fa-solid fa-envelope"></i>
               </div>
                   </div>
             </li>
-              <li class="modal_item">
+              <li class="modal__item">
                 <form >
                   <label for="">Коментар</label>
-                  <div class="form_box">
-                    <textarea class="modal_texteria" name="masege" id="" cols="30" rows="10" placeholder="Введіть текст" ></textarea>
+                  <div class="form__box">
+                    <textarea class="modal__texteria" name="masege" id="" cols="30" rows="10" placeholder="Введіть текст" ></textarea>
                   </div> 
                 </form>
               </li>
               <form>
                 <input class="chekbox"  type="checkbox" name="chekbox" required>
               </form>
-                  <p class="main_modal_deskr">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></p>
-         <button class="modal_btn" >Відправити</button>
+                  <p class="modal__deskr">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></p>
+         <button class="modal__btn btn" >Відправити</button>
         </div>
       </div>
         
