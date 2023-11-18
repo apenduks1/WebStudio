@@ -54,3 +54,9 @@
     }
   }
 }
+/* медіа мобіла */
+@media (max-width: 480px) {
+  .page {
+   display: none;
+  }
+}

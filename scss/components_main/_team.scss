@@ -1,68 +1,94 @@
 .team {
-	padding: 94px 0;
-    background-color: $team_bg ;
-	width: 100%;
-	&__card img {
-		width: 270px;
-	}
-	&__title {
-		@extend %title
-	}
-	&__list {
-		display: flex;
-		justify-content: space-between;
-		margin:0 100px ;
-	}
-	&__card {
-		background-color: $var1;
-		border-radius: 0px 0px 4px 4px;
-		box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-		&:hover {
-			translate: 20px -20px;
-			transition-duration: 0.5s;
-			transition-delay: 0.5s;
-		}
-		h2 {
-			color: $var4;
-			text-align: center;
-			font-family: Roboto;
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 400;
-			line-height: normal;
-			letter-spacing: 0.48px;
-		}
-		h3 {
-			color: $var2;
-			text-align: center;
-			font-family: Roboto;
-			font-size: 16px;
-			font-style: normal;
-			font-weight: 500;
-			line-height: normal;
-			letter-spacing: 0.48px;
-		}
-	}
+  padding: 94px 0;
+  background-color: $team_bg;
+  width: 100%;
+  &__card img {
+    width: 270px;
+  }
+  &__title {
+    @extend %title;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+  }
+  &__card {
+    background-color: $var1;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    &:hover {
+      translate: 20px -20px;
+      transition-duration: 0.5s;
+      transition-delay: 0.5s;
+    }
+    h2 {
+      color: $var4;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.48px;
+    }
+    h3 {
+      color: $var2;
+      text-align: center;
+      font-family: Roboto;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      letter-spacing: 0.48px;
+    }
+  }
+  &__ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    svg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+    a {
+      display: block;
+      width: 44px;
+      height: 44px;
+      border-radius: 100%;
+      position: relative;
+      &:hover,
+      &:hover path {
+        background-color: $var3;
+        fill: $var1;
+      }
+    }
+  }
+}
+/* медіа мобіла */
+@media (max-width: 480px) {
+  .team {
+    width: 480px;
+    &__list {
+      display: inline-block;
+      
+      margin: 0 15px;
+	  padding: 0;
+    }
+    &__card {
+      width: 450px;
+      height: 622px;
+      margin: 0 0 15px 0;
+	  >img {
+		height: 460px;
+		width:100%;
+	  }
+    }
 	&__ul {
-		display: flex;
-		justify-content: space-between;
-		padding: 20px;
-		svg {
-			position: absolute;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-		a {
-			display: block;
-			width: 44px;
-			height: 44px;
-			border-radius: 100%;
-			position: relative;
-			&:hover, &:hover path {
-				background-color: $var3;
-				fill: $var1;
-			}
-		}
+		justify-content: center;
 	}
+  }
 }

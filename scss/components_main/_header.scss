@@ -121,4 +121,41 @@
 			}
 		}
 	}
+	&__hamburger {
+		display: none;
+	}
+}
+
+
+
+                                                    /* медіа телефон */
+
+
+@media  (max-width:480px  ) {
+.header {
+	&__group {
+		display: none;
+	}
+	&__hamburger {
+		display: block;
+	}
+}
+.hamburger__span {
+	color: $var5;
+	width:20px;
+}
+}
+
+                                                    /* медіа планшет*/
+
+@media  (max-width:768px  ) {
+	.header {
+		padding: 0;
+		&__contact {
+			display: inline-block;
+		    margin-left:  400px;
+			margin-top: 20px;
+		}
+	}
+
 }

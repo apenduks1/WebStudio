@@ -25,3 +25,11 @@
 		fill: $var3;
 	}
 }
+/* медіа мобіла */
+@media (max-width:480px) {
+	.clients {
+		&__list {
+			display: inline-block;
+		}
+	}
+}

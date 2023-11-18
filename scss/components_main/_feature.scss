@@ -47,3 +47,24 @@
 }
 
 
+/* медіа телефон */
+@media (max-width:480px) {
+	.feature {
+		&__list {
+			list-style: none;
+			display: inline-block;
+			justify-content: center;
+			width: 480px;
+		}
+		&__iteam {
+			width: 480px;
+			margin: 15px;
+			>h3 {
+				text-align: center;
+			}
+		}
+		&__img {
+			width: 480px;
+		}
+	}
+}

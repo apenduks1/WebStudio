@@ -1,32 +1,54 @@
-
-
 .promo {
-	padding: 200px 0px;
-	background-image: url(../img/page1/Imgbig.png);
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-	margin-top: 74px;
-	&__title {
-		color: aliceblue;
-	}
-	&__btn {
-		width: 220px;
-		height: 50px;
-		border: none;
-		font-family: "Roboto";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 16px;
-		line-height: 30px;
-		text-align: center;
-		letter-spacing: 0.06em;
-		color:$var1;
-		background: $var3;
-		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-		border-radius: 4px;
-		display: block;
-		margin: 0 auto;
-		margin-top: 30px;
-	}
+  padding: 200px 0px;
+  background-image: url(../img/page1/Imgbig.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 74px;
+  &__title {
+    color: aliceblue;
+  }
+  &__btn {
+    width: 220px;
+    height: 50px;
+    border: none;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $var1;
+    background: $var3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}
+/* медіа телефон */
+@media (max-width: 480px) {
+  .promo {
+    background-image: url(../../img/page1/promo_bg_mobile.png);
+    height: 400px;
+  }
+  h1 {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 42px; /* 161.538% */
+    letter-spacing: 1.56px;
+    text-transform: uppercase;
+  }
+}
+/* медіа планшет */
+
+@media (max-width: 768x) {
+  .promo {
+    background-color: url(../../img/page1/promo_bg_mobile.png);
+  }
 }
