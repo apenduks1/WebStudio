@@ -1,5 +1,8 @@
 .page {
   margin: 0;
+  @media (max-width:1200px) {
+display: none;
+  }
   &__foto {
     display: flex;
     justify-content: space-around;
@@ -55,8 +58,3 @@
   }
 }
 /* медіа мобіла */
-@media (max-width: 480px) {
-  .page {
-   display: none;
-  }
-}

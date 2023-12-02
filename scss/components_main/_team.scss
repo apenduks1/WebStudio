@@ -3,21 +3,54 @@
   background-color: $team_bg;
   width: 100%;
   &__card img {
-    width: 270px;
+    width: 100%;
+    @media (min-width:1200px) {
+      height: 260px;
+    }
   }
   &__title {
-    @extend %title;
+    color: #212121;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    @media (max-width: 1200px) {
+      font-size: 28px;
+    }
   }
   &__list {
     display: flex;
-    justify-content: space-between;
-    margin: 0 100px;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+    margin: 0 15px;
+    row-gap: 30px;
   }
   &__card {
     background-color: $var1;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
+    @media (min-width: 300px) {
+      width: 270px;
+    }
+    @media (min-width: 480px) {
+      width: 450px;
+      height: 622px;
+    }
+    @media (min-width:768px){
+      width: 354px;
+      height: 536px;
+    }
+    @media (min-width:1200px){
+      width: 270px;
+      height: 428px;
+    }
+
+
     &:hover {
       translate: 20px -20px;
       transition-duration: 0.5s;
@@ -46,7 +79,7 @@
   }
   &__ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     padding: 20px;
     svg {
       position: absolute;
@@ -68,27 +101,4 @@
     }
   }
 }
-/* медіа мобіла */
-@media (max-width: 480px) {
-  .team {
-    width: 480px;
-    &__list {
-      display: inline-block;
-      
-      margin: 0 15px;
-	  padding: 0;
-    }
-    &__card {
-      width: 450px;
-      height: 622px;
-      margin: 0 0 15px 0;
-	  >img {
-		height: 460px;
-		width:100%;
-	  }
-    }
-	&__ul {
-		justify-content: center;
-	}
-  }
-}
+
