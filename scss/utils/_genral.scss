@@ -16,13 +16,14 @@ letter-spacing: 0.78px;
   margin: 0 auto;
   @media (min-width: 320px) {
     padding: 0 15px;
+    
   }
   @media (min-width: 768px) {
     padding: 0;
     max-width: 738px;
   }
   @media (min-width: 1200px) {
-    max-width: 1170px;
+    max-width: 90%;
   }
 }
 .hamburger {

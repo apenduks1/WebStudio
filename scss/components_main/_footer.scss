@@ -2,8 +2,7 @@
   background-color: $var8;
   padding: 72px 0 60px 0;
   flex-wrap: wrap;
-  
- 
+
   &__nav--end h4 {
     font-family: "Roboto";
     font-style: normal;
@@ -14,20 +13,34 @@
     text-transform: uppercase;
     margin: 0;
     color: $var1;
-    
+    display: flex;
+    @media (min-width: 320px) {
       text-align: center;
-    
+    }
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
   }
-  &__nav--start{
-    margin-left: 100px;
-  }
-  &__nav--end {
 
-     text-align: center;
-     margin: 0 15px;
-    
-  
+  &__adress {
+    margin: 0;
+    padding: 0;
   }
+  &__nav--start {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+  }
+  &__nav {
+    @media (min-width: 768px) {
+      display: flex;
+      justify-content: space-around;
+    }
+    @media (min-width: 1200px) {
+      gap: 70px;
+    }
+  }
+
   &__nav--end a {
     display: block;
     background: rgba(255, 255, 255, 0.1);
@@ -38,6 +51,12 @@
     /* 171.429% */
     letter-spacing: 0.42px;
   }
+  &__container {
+    @media (min-width: 1200px) {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
   .footer__adress2 {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
@@ -46,9 +65,13 @@
     font-weight: 400;
     line-height: 24px; /* 171.429% */
     letter-spacing: 0.42px;
-  
-      text-align: center;
-    
+    display: flex;
+    @media (min-width: 320px) {
+      justify-content: center;
+    }
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
   }
   .footer__adress3 {
     font-family: "Roboto";
@@ -59,17 +82,27 @@
     /* or 171% */
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    @media (min-width: 320px) {
+      justify-content: center;
+    }
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
   }
-  
   .footer__nav--end i {
-    
     transform: translate(-50%, -50%);
     color: $var1;
+  }
+  &__nav--end {
+    @media (min-width: 320px) {
+      margin-top: 40px;
+    }
   }
 
   .footer__nav--end a:hover,
   .footer__nav--end a:hover i {
-    background-color: $var2;
+    background-color: $var3;
     color: $var1;
   }
 
@@ -77,6 +110,10 @@
     display: flex;
     gap: 10px;
     padding: 0;
+    @media (min-width: 320px) {
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .footer__subtitle {
@@ -88,6 +125,13 @@
     line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
+    display: flex;
+    @media (min-width: 320px) {
+      justify-content: center;
+    }
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
   }
 
   .footer__list input {
@@ -102,10 +146,20 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     background: rgba(33, 150, 243, 0);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 358px;
+
     height: 50px;
     padding: 20px;
     box-sizing: border-box;
+    @media (min-width: 320px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      width: 300px;
+      margin-top: 10px;
+    }
+    @media (min-width: 480px) {
+      width: 430px;
+    }
   }
   .footer__list button {
     border-radius: 4px;
@@ -120,13 +174,19 @@
     font-style: normal;
     font-weight: 700;
     line-height: 30px; /* 187.5% */
-    &:hover,
-    &:hover i {
-      background-color: $var2;
-      color: $var1;
+    margin: 0;
+    @media (min-width: 320px) {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+
+     @media (min-width:1200px) {
+      display: block;
     }
   }
-  &__adress1 {
+  .footer__adress1 {
     color: $var1;
     font-family: Roboto;
     font-size: 14px;
@@ -134,11 +194,11 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-    
+    @media (min-width: 320px) {
       text-align: center;
-    
+    }
   }
-  &__adress2 {
+  &__adress2 a {
     color: rgba(255, 255, 255, 0.6);
     font-family: Roboto;
     font-size: 14px;
@@ -146,10 +206,12 @@
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
-    text-align: start;
+    @media (min-width: 320px) {
+      text-align: center;
+    }
   }
-  
-  &__adress3 {
+
+  &__adress3 a {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 400;
@@ -157,9 +219,11 @@
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    @media (min-width: 320px) {
+      text-align: center;
+    }
   }
 
-    
   &__nav--end i {
     position: absolute;
     top: 50%;
@@ -168,67 +232,31 @@
     color: $var1;
   }
   &__list {
-    margin:0;
+    flex-wrap: wrap;
+    @media (min-width: 320px) {
+      margin-top: 40px;
+    }
   }
   &__nav--end ul {
     display: flex;
     gap: 10px;
     padding: 0;
-    
   }
-  &__subtitle {
-    color: $var1;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
 
-      text-align: center;
-      margin-top: 60px;
-    
-  }
-  &__list input {
-    color: rgba(255, 255, 255, 0.6);
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0.48px;
-    border-radius: 4px;
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    background: rgba(33, 150, 243, 0);
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-    width: 358px;
-    height: 50px;
-    padding: 20px;
-    box-sizing: border-box;
-   
-  }
   &__list button {
     @extend %btn;
   }
-  &__container {
-    display: flex;
-    padding-top: 60px;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: space-between;
-    margin:0 ;
-  
-   
-  }
+
   &__box {
     display: flex;
     gap: 12px;
-    margin-top: 20px;
-
+    @media (min-width:1200px) {
+      justify-content: space-around;
+    }
   }
+ 
+
   .studio {
-    margin-left:38px ;
     color: #fff;
     font-family: Raleway;
     font-size: 26px;
@@ -236,5 +264,12 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
+    display: flex;
+    @media (min-width: 320px) {
+      justify-content: center;
+    }
+    @media (min-width: 1200px) {
+      justify-content: start;
+    }
   }
 }

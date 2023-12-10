@@ -18,14 +18,17 @@ display: none;
 &__title{
 	@extend %title
 }
-  &_  _emet {
+  &__emet {
     position: absolute;
-    bottom: 58px;
+    bottom: 4px;
     background: rgba(47, 48, 58, 0.8);
     width: 370px;
     height: 70px;
     padding: 27px 0;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   &__text {
     color: $var7;
