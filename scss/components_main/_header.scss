@@ -1,161 +1,155 @@
-
 .header {
-	position: fixed;
-	background-color: $var1;
-	width: 100%;
-	z-index: 20000;
-	top: 0;
-	padding: 26px 0;
-	box-sizing: border-box;
-	&__bloks {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-	}
-	&__logo {
-		font-family: "Raleway";
-		font-style: normal;
-		font-weight: 700;
-		font-size: 26px;
-		line-height: 31px;
-		letter-spacing: 0.03em;
-		color: $var5;
-		margin: 0;
-		span {
-			color: $var3;
-		}
-	}
-	&__block {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		width: 510px;
-	}
-	&__menu {
-		
-		display: flex;
-		gap: 30px;
-		margin: 0;
-		align-items: center;
-		a::after {
-			color: $var3;
-			transition-duration: 1s;
-			transform: rotateY(90deg);
-			content: "";
-			display: block;
-			width: 100%;
-			height: 4px;
-			background-color: $var3;
-			border-radius: 2px;
-			position: absolute;
-			top: 45px;
-		}
-		a:hover::after {
-			content: "";
-			background-color: $var3;
-			border-radius: 2px;
-			transform: rotate(0deg);
-		}
-		a {
-			font-family: "Roboto";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 16px;
-			letter-spacing: 0.02em;
-			color: $var2;
-			position: relative;
-		}
-	}
-	&__contact {
-		display: flex;
-		align-items: center;
-		gap: 30px;
-		a {
-			font-family: "Roboto";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 16px;
-			letter-spacing: 0.02em;
-			display: flex;
-			color: $var4;
-			align-items: center;
-			&:hover, &:hover path {
-				color: $var3;
-				fill: $var3;
-			}
-		}
-		svg {
-			margin-right: 10px;
-		}
-	}
-	&__iteam {
-		text-decoration: none;
-		> a {
-			font-family: "Roboto";
-			font-style: normal;
-			font-weight: 500;
-			font-size: 14px;
-			line-height: 16px;
-			letter-spacing: 0.02em;
-			color: $var2;
-			&:hover {
-				color: $var3;
-			}
-		}
-		.menu__active {
-			color: $var3;
-			&::after {
-				color: $var3;
-				transition-duration: 1s;
-				transform: rotateY(0);
-				content: "";
-				display: block;
-				width: 100%;
-				height: 4px;
-				background-color: $var3;
-				border-radius: 2px;
-				position: absolute;
-				top: 45px;
-			}
-		}
-	}
-	&__hamburger {
-		display: none;
-	}
-}
+  position: fixed;
+  background-color: $var1;
+  width: 100%;
+  z-index: 20000;
+  top: 0;
+  padding: 26px 0;
+  box-sizing: border-box;
 
+  &__logo {
+    font-family: "Raleway";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $var5;
+    margin: 0;
+    span {
+      color: $var3;
+    }
+  }
+  &__block {
+    display: flex;
+    justify-content: space-between;
+  }
 
+  &__menu {
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    align-items: center;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+    }
+    @media (min-width: 1200px) {
+      margin-right: 300px;
+    }
 
-                                                    /* медіа телефон */
-
-
-@media  (max-width:480px  ) {
-.header {
-	&__group {
-		display: none;
-	}
-	&__hamburger {
-		display: block;
-	}
-}
-.hamburger__span {
-	color: $var5;
-	width:20px;
-}
-}
-
-                                                    /* медіа планшет*/
-
-@media  (max-width:768px  ) {
-	.header {
-		padding: 0;
-		&__contact {
-			display: inline-block;
-		    margin-left:  400px;
-			margin-top: 20px;
-		}
-	}
-
+    a::after {
+      color: $var3;
+      transition-duration: 1s;
+      transform: rotateY(90deg);
+      content: "";
+      display: block;
+      width: 100%;
+      height: 4px;
+      background-color: $var3;
+      border-radius: 2px;
+      position: absolute;
+      top: 47px;
+    }
+    a:hover::after {
+      content: "";
+      background-color: $var3;
+      border-radius: 2px;
+      transform: rotate(0deg);
+    }
+    a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: $var2;
+      position: relative;
+      :hover {
+        color: var3;
+      }
+    }
+  }
+  &__contact {
+    gap: 7px;
+    @media (min-width: 320px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: block;
+    }
+    @media (min-width:1200px) {
+      display: flex; 
+      justify-content: space-between;
+    }
+    a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      display: flex;
+      color: $var4;
+      align-items: center;
+      &:hover,
+      &:hover path {
+        color: $var3;
+        fill: $var3;
+      }
+    }
+    svg {
+      margin-right: 10px;
+    }
+  }
+  &__iteam {
+    text-decoration: none;
+    > a {
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.02em;
+      color: $var2;
+      &:hover {
+        color: $var3;
+      }
+    }
+    .menu__active {
+      color: $var3;
+      &::after {
+        color: $var3;
+        transition-duration: 1s;
+        transform: rotateY(0);
+        content: "";
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: $var3;
+        border-radius: 2px;
+        position: absolute;
+        top: 45px;
+      }
+    }
+    &__group {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+  &__hamburger {
+    @media (min-width: 320px) {
+      position: absolute;
+      top: 22%;
+      right: 0;
+      background: transparent;
+      border: none;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
 }

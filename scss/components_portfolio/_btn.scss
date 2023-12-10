@@ -1,5 +1,5 @@
 
-.btns {
+.btn {
 	padding: 95px 0px 35px 0px;
 	margin: 0 auto;
 	width: 575px;
@@ -32,8 +32,9 @@
     cursor: pointer;
     transition: 0.2s;
   }
-  .btns:hover {
+  .btn__iteam:hover {
     background: #2196f3;
+	flex-wrap: wrap;
     /* shadow-middle */
 	&:hover {
 		background: $var3;

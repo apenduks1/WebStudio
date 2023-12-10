@@ -4,6 +4,13 @@
   width: 100%;
   &__card img {
     width: 100%;
+ 
+    @media (min-width:320px) {
+      height: auto;
+    }
+    @media (min-width:768px) {
+      height: 374px;
+    }
     @media (min-width:1200px) {
       height: 260px;
     }

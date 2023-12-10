@@ -2,6 +2,7 @@
   background-color: $var8;
   padding: 72px 0 60px 0;
   flex-wrap: wrap;
+  
  
   &__nav--end h4 {
     font-family: "Roboto";
@@ -17,13 +18,14 @@
       text-align: center;
     
   }
+  &__nav--start{
+    margin-left: 100px;
+  }
   &__nav--end {
 
      text-align: center;
-     margin-right: 60px;
-     @media (max-width:480px) {
-      margin-left: 79px;
-     }
+     margin: 0 15px;
+    
   
   }
   &__nav--end a {
@@ -58,13 +60,9 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
-  @media (max-width:1200px) {
-    text-align: center;
-  }
+  
   .footer__nav--end i {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    
     transform: translate(-50%, -50%);
     color: $var1;
   }
@@ -150,13 +148,7 @@
     letter-spacing: 0.42px;
     text-align: start;
   }
-  &__form {
-    @media (max-width:1200px) {
-      display: flex;
-      justify-content: center;
-      margin-top: 60px;
-      }
-  }
+  
   &__adress3 {
     font-family: "Roboto";
     font-style: normal;
@@ -166,6 +158,8 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+
+    
   &__nav--end i {
     position: absolute;
     top: 50%;
@@ -175,9 +169,6 @@
   }
   &__list {
     margin:0;
-   @media (min-width:768px) {
-    margin-left: 150px;
-   }
   }
   &__nav--end ul {
     display: flex;
@@ -222,20 +213,19 @@
   }
   &__container {
     display: flex;
+    padding-top: 60px;
+    flex-wrap: wrap;
+    display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    flex-wrap:wrap;
+    margin:0 ;
+  
+   
   }
   &__box {
     display: flex;
     gap: 12px;
     margin-top: 20px;
-    @media (max-width:1200px) {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    width: 450px;
-      }
+
   }
   .studio {
     margin-left:38px ;
@@ -246,13 +236,5 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.78px;
-  }
-  &__container {
-    padding-top: 60px;
-    display: flex;
-    @media (max-width:480px) {
-      align-items: center;
-      justify-content: center;
-    }
   }
 }

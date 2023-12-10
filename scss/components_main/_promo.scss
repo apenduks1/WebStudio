@@ -5,6 +5,13 @@
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 74px;
+  @media (min-width:320px) {
+    background-image: url(../../img/page1/promo_bg_mobile.png);
+    height: 400px;
+  }
+  @media (min-width:480px) {
+    background-color: url(../../img/page1/promo_bg_mobile.png);
+  }
   &__title {
     color: aliceblue;
   }
@@ -26,30 +33,5 @@
     display: block;
     margin: 0 auto;
     margin-top: 30px;
-  }
-}
-/* медіа телефон */
-@media (max-width: 480px) {
-  .promo {
-    background-image: url(../../img/page1/promo_bg_mobile.png);
-    height: 400px;
-  }
-  h1 {
-    text-align: center;
-    font-family: Roboto;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 900;
-    line-height: 42px; /* 161.538% */
-    letter-spacing: 1.56px;
-    text-transform: uppercase;
-  }
-}
-/* медіа планшет */
-
-@media (max-width: 768x) {
-  .promo {
-    background-color: url(../../img/page1/promo_bg_mobile.png);
-    width: 768;
   }
 }

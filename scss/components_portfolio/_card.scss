@@ -4,6 +4,12 @@
   margin-top: 30px;
   position: relative;
   height: 404px;
+  @media (min-width: 320px) {
+    width: 300px;
+    padding: 0;
+    margin: 0 auto;
+    
+  }
   @media (min-width: 480px) {
     width: 450px;
   }
@@ -77,6 +83,21 @@
   top: 11%;
   left: 6%;
   display: none;
+  width: 100%;
+
+  @media (min-width: 320px) {
+    height: 229px;
+   
+  }
+  @media (min-width: 480px) {
+    height: 1px;
+  }
+  @media (min-width: 768px) {
+    height: 354px;
+  }
+  @media (min-width: 1200px) {
+    height: 360px;
+  }
 }
 .card:hover .card__hover {
   display: block;
@@ -86,9 +107,16 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding: 0;
+  margin: 0 auto;
+ 
   @media (min-width: 768px) {
 	max-width: 768px;
   }
+  @media (min-width: 1200px) {
+   min-width: 1180px;
+  }
+
 }
 .card h4,
 a {
