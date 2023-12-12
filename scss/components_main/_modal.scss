@@ -1,107 +1,129 @@
 .modal {
-	position: relative;
-	position: absolute;
-	position: fixed;
-	z-index: 909999999999999999;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	width: 528px;
-	height: 651px;
-	border-radius: 4px;
-	background: $var1;
-	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+  position: relative;
+  position: absolute;
+  position: fixed;
+  z-index: 909999999999999999;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 651px;
+  border-radius: 4px;
+  background: $var1;
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-	&__title {
-		color: $var2;
-		text-align: center;
-		font-family: Roboto;
-		font-size: 20px;
-		font-style: normal;
-		font-weight: 700;
-		line-height: normal;
-		letter-spacing: 0.6px;
-	}
-	&__texteria {
-		width: 448px;
-		height: 120px;
-		border-radius: 4px;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-	}
-	/* 171.429% */
-	&__btn {
-		position: absolute;
-		width: 200px;
-		height: 50px;
-		border-radius: 4px;
-		background: $var3;
-		box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-		border: none;
-		left: 30%;
-	}
-	&__imput {
-		width: 448px;
-		height: 40px;
-		border-radius: 4px;
-		border: 1px solid rgba(33, 33, 33, 0.2);
-		margin-bottom: 10px;
-	}
-	&__svg {
-		position: absolute;
-		top: 25%;
-		left: 2%;
-	}
-	&__deskr {
-		color: $var4;
-		font-family: Roboto;
-		font-size: 14px;
-		font-style: normal;
-		font-weight: 400;
-		line-height: 24px;
-		letter-spacing: 0.42px;
-		text-align: center;
-	}
+  @media (min-width: 320px) {
+    width: 300px;
+  }
+  &__title {
+    color: $var2;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.6px;
+  }
+  &__texteria {
+    width: 448px;
+    height: 120px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    @media (min-width: 320px) {
+      width: 250px;
+    }
+  }
+  /* 171.429% */
+  &__btn {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    background: $var3;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+    border: none;
+  }
+  &__btn--emmet {
+    @media (min-width: 320px) {
+      
+    margin-left: 15px;
+    }
+  }
+  .modal__deskr span {
+    font-size: 18px;
+  }
+  &__imput {
+    width: 448px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    margin-bottom: 10px;
+	@media (min-width: 320px) {
+		width: 250px;
+	  }
+  }
+  &__svg {
+    position: absolute;
+    top: 25%;
+	left: 5%;
+  }
+  &__deskr {
+    color: $var4;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    text-align: center;
+  }
 }
 .backdrop {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
-	display: block;
-	z-index: 99999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: block;
+  z-index: 99999;
 }
 .close {
-	position: absolute;
-	left: 94.2%;
-	top: 3%;
+  position: absolute;
+  left: 94.2%;
+  top: 3%;
 }
 i:hover {
-	color: $var3;
+  color: $var3;
 }
 .form {
-	&__box:hover input {
-		border-color: $var3;
-	}
-	&__box:hover i {
-		color: $var3;
-	}
-	&__box {
-		position: relative;
-	}
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  &__box:hover input {
+    border-color: $var3;
+  }
+  &__box:hover i {
+    color: $var3;
+  }
+  &__box {
+    position: relative;
+  }
+  
 }
 
 .is-hidden {
-	display: none;
-}_
-.no-scroll {
-	overflow: hidden;
+  display: none;
+}
+_ .no-scroll {
+  overflow: hidden;
 }
 
 .chekbox {
-	position: absolute;
-	top: 72%;
-	left: 13%;
+  position: absolute;
+ 
+  @media (min-width:320px) {
+	top: 80%;
+}
 }

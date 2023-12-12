@@ -22,7 +22,12 @@
   }
   &__block {
     display: flex;
+    gap: 93px;
+    align-items: center;
     justify-content: space-between;
+  }
+  &__block--start {
+    display: flex;
   }
 
   &__menu {
@@ -30,15 +35,14 @@
     gap: 30px;
     margin: 0;
     align-items: center;
+    margin-top: 7px;
     @media (min-width: 320px) {
       display: none;
     }
     @media (min-width: 768px) {
       display: flex;
     }
-    @media (min-width: 1200px) {
-      margin-right: 300px;
-    }
+    
 
     a::after {
       color: $var3;
@@ -74,7 +78,11 @@
     }
   }
   &__contact {
-    gap: 7px;
+    display: flex;
+    visibility: visible;
+    animation-name: fadeInUp;
+    justify-content: space-between;
+    align-items: center;
     @media (min-width: 320px) {
       display: none;
     }
@@ -82,8 +90,9 @@
       display: block;
     }
     @media (min-width:1200px) {
-      display: flex; 
+      display: flex;
       justify-content: space-between;
+      gap: 5px;
     }
     a {
       font-family: "Roboto";

@@ -248,9 +248,10 @@
   }
 
   &__box {
-    display: flex;
+   
     gap: 12px;
     @media (min-width:1200px) {
+      display: flex;
       justify-content: space-around;
     }
   }

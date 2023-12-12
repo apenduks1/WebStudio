@@ -28,25 +28,27 @@
       <div class="container ">
         <div class="header__bloks animate__animated animate__fadeInUp wow">
           <div class="header__block">
-            <a href="/"
-              ><h2 class="header__logo"><span>Web</span>Studio</h2></a
-            >
-            
-              <nav>
-                <ul class="header__menu">
-                  <li class="header__nav">
-                    <a class="menu__active header__link" href="/">Студія</a>
-                  </li>
-                  <li class="header__nav">
-                    <a class="header__link" href="./portfolio.html"
-                      >Портфоліо</a
-                    >
-                  </li>
-                  <li class="header__nav">
-                    <a class="header__link" href="/">Контакти</a>
-                  </li>
-                </ul>
-              </nav>
+<div class="header__block--start">
+  <a href="/"
+  ><h2 class="header__logo"><span>Web</span>Studio</h2></a
+>
+
+  <nav>
+    <ul class="header__menu">
+      <li class="header__nav">
+        <a class="menu__active header__link" href="/">Студія</a>
+      </li>
+      <li class="header__nav">
+        <a class="header__link" href="./portfolio.html"
+          >Портфоліо</a
+        >
+      </li>
+      <li class="header__nav">
+        <a class="header__link" href="/">Контакти</a>
+      </li>
+    </ul>
+  </nav>
+</div>
               <div class="header__contact">
                 <a href="mailto:info@devstudio.com">
                   <svg
@@ -1297,7 +1299,7 @@
               <div class="form_box">
                 <input class="modal__imput" type="name" placeholder="">
                <div class="modal__svg">
-                <i class="fa-solid fa-user "></i>
+                <i class="fa-solid fa-user"></i>
                </div>
               </div>
             </li>     
@@ -1331,11 +1333,13 @@
                   </div> 
                 </form>
               </li>
-              <form>
+              <form class="chekbox">
                 <input class="chekbox"  type="checkbox" name="chekbox" required>
               </form>
                   <p class="modal__deskr">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></p>
-         <button class="modal__btn btn" >Відправити</button>
+       <div class="modal__btn--emmet">
+        <button class="modal__btn " >Відправити</button>
+       </div>
         </div>
        
       </div>
