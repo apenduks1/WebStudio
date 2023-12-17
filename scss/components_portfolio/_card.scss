@@ -84,20 +84,9 @@
   left: 6%;
   display: none;
   width: 100%;
+  align-items: center;
 
-  @media (min-width: 320px) {
-    height: 229px;
-   
-  }
-  @media (min-width: 480px) {
-    height: 1px;
-  }
-  @media (min-width: 768px) {
-    height: 354px;
-  }
-  @media (min-width: 1200px) {
-    height: 360px;
-  }
+  
 }
 .card:hover .card__hover {
   display: block;

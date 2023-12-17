@@ -6,9 +6,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
+	
 	&__iteam {
-		background: $var1;
-		border: none;
+		background: $var4;
+
 		border-radius: 4px;
 		font-family: "Roboto";
 		font-style: normal;

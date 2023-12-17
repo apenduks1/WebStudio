@@ -2,7 +2,7 @@
   position: relative;
   position: absolute;
   position: fixed;
-  z-index: 909999999999999999;
+  z-index: 1;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
@@ -14,22 +14,25 @@
     0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   @media (min-width: 320px) {
     width: 300px;
+    height: 580px;
   }
   &__title {
     color: $var2;
     text-align: center;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 17px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
+    
   }
   &__texteria {
     width: 448px;
     height: 120px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
+    z-index: 2;
     @media (min-width: 320px) {
       width: 250px;
     }
@@ -43,6 +46,7 @@
     background: $var3;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
+    z-index: 2;
   }
   &__btn--emmet {
     @media (min-width: 320px) {
@@ -50,8 +54,9 @@
     margin-left: 15px;
     }
   }
-  .modal__deskr span {
+  .modal__deskr a {
     font-size: 18px;
+    z-index: 2;
   }
   &__imput {
     width: 448px;
@@ -59,6 +64,8 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     margin-bottom: 10px;
+    z-index: 2;
+    margin: 0 auto;
 	@media (min-width: 320px) {
 		width: 250px;
 	  }
@@ -67,6 +74,7 @@
     position: absolute;
     top: 25%;
 	left: 5%;
+  z-index: 2;
   }
   &__deskr {
     color: $var4;
@@ -77,6 +85,7 @@
     line-height: 24px;
     letter-spacing: 0.42px;
     text-align: center;
+    z-index: 2;
   }
 }
 .backdrop {
@@ -91,8 +100,9 @@
 }
 .close {
   position: absolute;
-  left: 94.2%;
-  top: 3%;
+  right:  8px;
+  top: 4%;
+ 
 }
 i:hover {
   color: $var3;
@@ -101,6 +111,7 @@ i:hover {
   position: absolute;
   top: 5%;
   left: 10%;
+  z-index: 2;
   &__box:hover input {
     border-color: $var3;
   }
@@ -116,12 +127,14 @@ i:hover {
 .is-hidden {
   display: none;
 }
-_ .no-scroll {
+ .no-scroll {
   overflow: hidden;
 }
 
+
 .chekbox {
   position: absolute;
+  z-index: 2;
  
   @media (min-width:320px) {
 	top: 80%;

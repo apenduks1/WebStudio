@@ -1293,53 +1293,58 @@
         <div class="modal" >
           <i  class="fa-solid fa-xmark close fa-2xl" data-close-modal></i>
           <h5 class="modal__title">Залиште свої дані, ми вам передзвонимо</h5>
-          <ul>
-            <li class="modal__item">
-              <label for="">Ім'я</label>
-              <div class="form_box">
-                <input class="modal__imput" type="name" placeholder="">
-               <div class="modal__svg">
-                <i class="fa-solid fa-user"></i>
-               </div>
+          <form class="modal__form"    
+            
+              <div class="modal__item">
+                <label for="">Ім'я</label>
+                <div class="form_box">
+                  <input class="modal__imput" type="name" >
+                 <div class="modal__svg">
+                  <i class="fa-solid fa-user"></i>
+                 </div>
+                </div>
+              </div>     
+               <div class="modal__item">           
+                
+                    <label for="">Телефон</label>
+                    <div class="form__box">
+                      <input class="modal__imput" type="phone number">
+                      <div class="modal__svg">
+                        <i class="fa-solid fa-phone"></i>
+                      </div>
+                    </div>    
+                    
               </div>
-            </li>     
-             <li class="modal__item">           
-                <form>
-                  <label for="">Телефон</label>
-                  <div class="form__box">
-                    <input class="modal__imput" type="phone number" placeholder="">
-                    <div class="modal__svg">
-                      <i class="fa-solid fa-phone"></i>
+                <div class="modal__item">
+                  
+                    <label for="">Пошта</label>
+                    <div class="form__box">
+                      <input class="modal__imput" type="email" >
+                <div class="modal__svg">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
                     </div>
-                  </div>    
-                  </form>       
-            </li>
-              <li class="modal__item">
-                <form>
-                  <label for="">Пошта</label>
-                  <div class="form__box">
-                    <input class="modal__imput" type="email" placeholder="">
-              <div class="modal__svg">
-                <i class="fa-solid fa-envelope"></i>
+                    
               </div>
-                  </div>
-                  </form>
-            </li>
-              <li class="modal__item">
-                <form >
-                  <label for="">Коментар</label>
-                  <div class="form__box">
-                    <textarea class="modal__texteria" name="masege" id="" cols="30" rows="10" placeholder="Введіть текст" ></textarea>
-                  </div> 
-                </form>
-              </li>
-              <form class="chekbox">
-                <input class="chekbox"  type="checkbox" name="chekbox" required>
-              </form>
-                  <p class="modal__deskr">Погоджуюся з розсилкою та приймаю<span>Умови договору</span></p>
-       <div class="modal__btn--emmet">
-        <button class="modal__btn " >Відправити</button>
-       </div>
+                <div class="modal__item">
+                 
+                    <label for="">Коментар</label>
+                    <div class="form__box">
+                      <textarea class="modal__texteria" name="masege"  placeholder="Введіть текст" ></textarea>
+                    </div> 
+           
+                </div>
+                <div class="chekbox">
+                  <input class="chekbox"  type="checkbox" name="chekbox" required>
+                  <p class="modal__deskr">
+                    Погоджуюся з розсилкою та приймаю<a href="/">Умови договору</a></p>
+                </div>
+                   
+        
+          <button class="modal__btn " >Відправити</button>
+        
+          </form>
+          
         </div>
        
       </div>
