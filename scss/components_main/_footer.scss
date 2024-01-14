@@ -15,8 +15,13 @@
     color: $var1;
     display: flex;
     @media (min-width: 320px) {
-      text-align: center;
+      
+      
+      justify-content: center;
     }
+   @media (min-width:768px) {
+    margin: 0;
+   }
     @media (min-width: 1200px) {
       justify-content: start;
     }
@@ -182,7 +187,7 @@
       margin-top: 10px;
     }
 
-     @media (min-width:1200px) {
+    @media (min-width: 1200px) {
       display: block;
     }
   }
@@ -248,14 +253,12 @@
   }
 
   &__box {
-   
     gap: 12px;
-    @media (min-width:1200px) {
+    @media (min-width: 1200px) {
       display: flex;
       justify-content: space-around;
     }
   }
- 
 
   .studio {
     color: #fff;

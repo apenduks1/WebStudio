@@ -6,9 +6,9 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	
+	margin-top: 100px;
 	&__iteam {
-		background: $var4;
+		background: $team_bg	;
 
 		border-radius: 4px;
 		font-family: "Roboto";
@@ -22,6 +22,7 @@
 		padding: 6px 22px;
 		cursor: pointer;
 		transition: 0.2s;
+		border: none;
 	}
 	/* identical to box height, or 162% */
   

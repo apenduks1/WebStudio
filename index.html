@@ -83,7 +83,7 @@
               </div>
             
           </div>
-          <button class="hamburger header__hamburger">
+          <button class="hamburger header__hamburger ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -100,7 +100,7 @@
             </svg>
           </button>
 
-          <div class="header__drawer drawer">
+         <div class=" drawer header__drawer ">
             <button class="drawer__btn">
               <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
               <path d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z" fill="#212121"/>
@@ -119,7 +119,7 @@
                 </li>
               </ul>
             </nav>
-            <div class="header__contact drawer__contact">
+            <div class="drawer__contact  ">
               <a class="drawer__link--contact" href="mailto:info@devstudio.com">
                 <svg
                   width="16"
@@ -152,12 +152,12 @@
               >
             </div>
             <ul class="drawer__social">
-              <li class="drawer__iteam--social">Instagram</li>
-              <li class="drawer__iteam--social">Twitter</li>
-              <li class="drawer__iteam--social">Facebook</li>
+              <li class="drawer__iteam--social">Instagram</li> <hr class="drawer__line">
+              <li class="drawer__iteam--social">Twitter</li> <hr class="drawer__line"> 
+              <li class="drawer__iteam--social">Facebook</li> <hr class="drawer__line">
               <li class="drawer__iteam--social">LinkedIn</li>
             </ul>
-          </div>
+          </div> 
         </div>
       </div>
     </header>
@@ -223,8 +223,9 @@
       </section>    
   <section class="page">
         <h2 class="title page__title">Чим ми займаємося</h2>
+        <div class="container">
         <div class="page__fotos">
-          <div class="container">
+         
             <ul class="page__list">
               <li class="page__iteam">
                 <img
@@ -1293,57 +1294,59 @@
         <div class="modal" >
           <i  class="fa-solid fa-xmark close fa-2xl" data-close-modal></i>
           <h5 class="modal__title">Залиште свої дані, ми вам передзвонимо</h5>
-          <form class="modal__form"    
-            
-              <div class="modal__item">
-                <label for="">Ім'я</label>
-                <div class="form_box">
-                  <input class="modal__imput" type="name" >
-                 <div class="modal__svg">
-                  <i class="fa-solid fa-user"></i>
-                 </div>
-                </div>
-              </div>     
-               <div class="modal__item">           
-                
-                    <label for="">Телефон</label>
-                    <div class="form__box">
-                      <input class="modal__imput" type="phone number">
-                      <div class="modal__svg">
-                        <i class="fa-solid fa-phone"></i>
-                      </div>
-                    </div>    
-                    
+          
+          <form class="modal__form">
+             
+            <div class="modal__item">
+              <label for="">Ім'я</label>
+              <div class="form_box">
+                <input class="modal__imput" type="name" >
+               <div class="modal__svg">
+                <i class="fa-solid fa-user"></i>
+               </div>
               </div>
-                <div class="modal__item">
-                  
-                    <label for="">Пошта</label>
-                    <div class="form__box">
-                      <input class="modal__imput" type="email" >
-                <div class="modal__svg">
-                  <i class="fa-solid fa-envelope"></i>
-                </div>
+            </div>     
+             <div class="modal__item">           
+              
+                  <label for="">Телефон</label>
+                  <div class="form__box">
+                    <input class="modal__imput" type="phone number">
+                    <div class="modal__svg">
+                      <i class="fa-solid fa-phone"></i>
                     </div>
-                    
+                  </div>    
+                  
+            </div>
+              <div class="modal__item">
+                
+                  <label for="">Пошта</label>
+                  <div class="form__box">
+                    <input class="modal__imput" type="email" >
+              <div class="modal__svg">
+                <i class="fa-solid fa-envelope"></i>
               </div>
-                <div class="modal__item">
-                 
-                    <label for="">Коментар</label>
-                    <div class="form__box">
-                      <textarea class="modal__texteria" name="masege"  placeholder="Введіть текст" ></textarea>
-                    </div> 
-           
-                </div>
-                <div class="chekbox">
-                  <input class="chekbox"  type="checkbox" name="chekbox" required>
-                  <p class="modal__deskr">
-                    Погоджуюся з розсилкою та приймаю<a href="/">Умови договору</a></p>
-                </div>
-                   
-        
-          <button class="modal__btn " >Відправити</button>
-        
+                  </div>
+                  
+            </div>
+              <div class="modal__item">
+               
+                  <label for="">Коментар</label>
+                  <div class="form__box">
+                    <textarea class="modal__texteria" name="masege"  placeholder="Введіть текст" ></textarea>
+                  </div> 
+         
+              </div>
+              <div class="chekbox__group">
+               <div class="modal__box">
+                <input class="chekbox"  type="checkbox" name="chekbox" required>
+                <p class="modal__deskr">
+                  Погоджуюся з розсилкою та приймаю<a href="/">Умови договору</a></p>
+              </div>
+               </div>
+        <button class="modal__btn " >Відправити</button>
+      
           </form>
+          
           
         </div>
        

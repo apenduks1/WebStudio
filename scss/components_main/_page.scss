@@ -8,12 +8,19 @@ display: none;
     justify-content: space-around;
     list-style: none;
     padding: 50px 0px 94px;
+
   }
+ &__fotos {
+  margin: 0;
+  
+ }
   &__list {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 215px 0;
     gap: 30px;
+    padding: 0;
+    
   }
 &__title{
 	@extend %title

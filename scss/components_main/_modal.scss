@@ -16,6 +16,26 @@
     width: 300px;
     height: 580px;
   }
+  @media (min-width:480px) {
+    width: 300px;
+  }
+  @media (min-width:768px) {
+    width: 450px;
+  }
+ 
+  &__form{
+    @media (min-width:320px){
+   margin-left:20px ;
+    }
+  }
+  &__item {
+    z-index: 200;
+   @media (min-width:320px){
+    
+   }
+   
+  
+  }
   &__title {
     color: $var2;
     text-align: center;
@@ -25,7 +45,7 @@
     font-weight: 700;
     line-height: normal;
     letter-spacing: 0.6px;
-    
+
   }
   &__texteria {
     width: 448px;
@@ -33,13 +53,17 @@
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     z-index: 2;
+   
     @media (min-width: 320px) {
-      width: 250px;
+      width: 90%;
+    }
+    @media (min-width:768px) {
+      width: 95%;
     }
   }
   /* 171.429% */
   &__btn {
-    position: absolute;
+   
     width: 200px;
     height: 50px;
     border-radius: 4px;
@@ -47,45 +71,63 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
     border: none;
     z-index: 2;
-  }
+  
+    @media (min-width: 320px) {
+      margin-left: 30px;
+     
+    }
+    @media (min-width:768px) {
+      margin-left: 101px;
+    }
+  } 
   &__btn--emmet {
     @media (min-width: 320px) {
-      
-    margin-left: 15px;
+      margin-left: 15px;
     }
   }
   .modal__deskr a {
     font-size: 18px;
     z-index: 2;
+
   }
+  
   &__imput {
-    width: 448px;
     height: 40px;
     border-radius: 4px;
     border: 1px solid rgba(33, 33, 33, 0.2);
-    margin-bottom: 10px;
-    z-index: 2;
+    z-index: 200;
     margin: 0 auto;
-	@media (min-width: 320px) {
-		width: 250px;
-	  }
+    @media (min-width: 320px) {
+      width: 90%;
+    }
+    @media (min-width:768px) {
+      width: 95%;
+    }
   }
   &__svg {
     position: absolute;
     top: 25%;
-	left: 5%;
-  z-index: 2;
+    left: 5%;
+    z-index: 2;
   }
   &__deskr {
     color: $var4;
     font-family: Roboto;
-    font-size: 14px;
+   
     font-style: normal;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.42px;
     text-align: center;
     z-index: 2;
+    @media (min-width:320px) {
+      font-size: 12px;
+      width: 100%;
+      flex-wrap: nowrap;
+    }
+    @media (min-width:768px) {
+      font-size: 14px;
+    }
   }
 }
 .backdrop {
@@ -100,9 +142,8 @@
 }
 .close {
   position: absolute;
-  right:  8px;
+  right: 8px;
   top: 4%;
- 
 }
 i:hover {
   color: $var3;
@@ -121,22 +162,28 @@ i:hover {
   &__box {
     position: relative;
   }
-  
+  @media (min-width) {
+    
+  }
 }
 
 .is-hidden {
   display: none;
 }
- .no-scroll {
+.no-scroll {
   overflow: hidden;
 }
-
 
 .chekbox {
   position: absolute;
   z-index: 2;
- 
-  @media (min-width:320px) {
-	top: 80%;
-}
+  @media (min-width: 320px) {
+    top: 77.5%;
+    left: 18%;
+  }
+
+  @media (min-width: 768px) {
+    top: 74.5%;
+    left: 2%;
+  }
 }
