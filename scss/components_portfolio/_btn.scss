@@ -7,6 +7,16 @@
 	align-items: center;
 	justify-content: space-between;
 	margin-top: 100px;
+	flex-wrap: wrap;
+	row-gap: 10px;
+	
+	@media (min-width: 480px) {
+		width: 450px;
+	}
+	@media (min-width:320px) {
+	width: 300px;
+	
+	}
 	&__iteam {
 		background: $team_bg	;
 
@@ -19,10 +29,13 @@
 		text-align: center;
 		letter-spacing: 0.03em;
 		color: $var2;
-		padding: 6px 22px;
+		padding: 6px ;
 		cursor: pointer;
 		transition: 0.2s;
 		border: none;
+		@media (min-width:480px) {
+			padding: 6px 24px	;
+		}
 	}
 	/* identical to box height, or 162% */
   
